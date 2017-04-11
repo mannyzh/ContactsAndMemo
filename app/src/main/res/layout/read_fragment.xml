@@ -1,0 +1,44 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ntech.contactsandmemo.fragments.ReadFragment"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/textRename"
+            android:hint="File name" />
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/text_read"
+            android:gravity="top|center_vertical"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentTop="true"
+            android:hint="Write here ^_^"
+            android:layout_weight="1"
+            android:scrollbars = "vertical" />
+
+        <Button
+            android:text="Save changes and EXIT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSave"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+</ScrollView>

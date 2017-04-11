@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General information">
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Name"
+            android:key="PREF_TEXT_NAME"
+            android:summary="or nickname" />
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Birthdate"
+            android:key="PREF_TEXT_BIRTHDAY"
+            android:summary="in any format you like" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Contact Information">
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Phone number"
+            android:key="PREF_TEXT_PHONE" />
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="e-m@il address"
+            android:key="PREF_TEXT_EMAIL" />
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Home address"
+            android:key="PREF_TEXT_ADDRESS" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Social Media Nicknames">
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Facebook"
+            android:key="PREF_TEXT_FACEBOOK"
+            android:summary="www.facebook.com/YOURNICK" />
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Steam"
+            android:key="PREF_TEXT_STEAM" />
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Instagram"
+            android:key="PREF_TEXT_INSTAGRAM" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Bio">
+        <EditTextPreference
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:title="Random text"
+            android:key="PREF_TEXT_BIO"
+            android:summary="write something" />
+    </PreferenceCategory>
+</PreferenceScreen>

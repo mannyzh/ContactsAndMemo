@@ -1,0 +1,84 @@
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.ntech.contactsandmemo.fragments.NewContactFragment"
+android:fillViewport="true"
+android:focusableInTouchMode="true">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout232"
+        android:layout_alignParentTop="true">
+
+            android:title="General information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/text_contact_name"
+            android:hint="Name"/>
+
+        <EditText
+            android:id="@+id/text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Phone number" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/text_email"
+            android:hint="Email address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/text_living_address"
+            android:hint="Living address"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout232"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom|center_vertical">
+
+        <Button
+            android:text="Save &amp; Exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_save"
+            android:layout_weight="3" />
+
+        <Button
+            android:text="Exit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_exit"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
